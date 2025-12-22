@@ -93,16 +93,15 @@ nav {
     font-size: var(--fs-body);
 }
 
-.nav-links a:hover {
-    color: var(--green);
-}
-
 .nav-links {
     margin-left: 24px;
-    text-decoration: none;
     color: var(--gray-text);
     font-size: var(--fs-ui);
     font-weight: var(--fw-semibold);
+}
+
+.nav-links a:hover {
+    color: var(--green);
 }
 
 .project-grid {
