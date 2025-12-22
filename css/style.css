@@ -1,0 +1,114 @@
+/* 1. DESIGN TOKENS */
+:root {
+    /* Colors */
+    --green: #58cc02;
+    --black: #202124;
+    --gray-light: #f8f9fa;
+    --gray-text: #5f6368;
+    --border-color: #e5e5e5;
+
+    /* Typography */
+    --font-main: "Figtree", sans-serif;
+
+    /* Font Sizes */
+    --fs-h1: 2rem;
+    --fs-h2: 1.5rem;
+    --fs-body: 1rem;
+    --fs-ui: 0.875rem;
+    --fs-sm: 0.75rem;
+
+    /* Font Weights */
+    --fw-extra-bold: 800;
+    --fw-bold: 700;
+    --fw-semibold: 600;
+    --fw-medium: 500;
+    --fw-regular: 400;
+
+    /* Line Heights */
+    --lh-tight: 1.2;
+    --lh-loose: 1.6;
+}
+
+/* 2. BASE STYLES */
+body {
+    font-family: var(--font-main);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+    color: var(--black);
+    line-height: var(--lh-loose);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 3. TYPOGRAPHY HIERARCHY */
+h1 {
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-extra-bold);
+    line-height: var(--lh-tight);
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    font-weight: var(--fs-bold);
+    line-height: var(--lh-tight);
+}
+
+.ui-label {
+    font-size: var(--fs-ui);
+    font-weight: var(--fw-semibold);
+}
+
+.caption {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    color: var(--gray-text);
+}
+
+/* 4. LAYOUT */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+nav {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--border-color);
+    background: white;
+    position: sticky;
+    top: 0;
+}
+
+.nav-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.card {
+    border: 2px solid var(--border-color);
+    border-radius: 16px;
+    padding: 24px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--green);
+}
