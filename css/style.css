@@ -132,6 +132,18 @@ nav {
     color: var(--green);
 }
 
+#hero {
+    /* Layout */
+    text-align: center;
+
+    /* Box Model */
+    padding: 120px 0;
+
+    /* Visual */
+    background-color: var(--gray-light);
+    border-bottom: 2px solid var(--border-color);
+}
+
 .project-grid {
     /* Layout */
     display: grid;
