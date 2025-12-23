@@ -34,6 +34,8 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -98,17 +100,16 @@ nav {
     justify-content: space-between;
 
     /* Box Model */
-    height: 72px;
     border-bottom: 1px solid var(--border-color);
 
     /* Visual */
-    background: white;
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(5px);
 }
 
 .nav-logo {
     font-size: var(--fs-body);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-extra-bold);
 }
 
 .nav-links a {
