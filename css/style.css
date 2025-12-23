@@ -131,17 +131,9 @@ nav {
     font-weight: var(--fw-extra-bold);
 }
 
-.nav-links {
-    /* Layout */
-    display: flex;
-    gap: 24px;
-
-    /* Box Model */
-    margin-left: 24px;
-}
-
 .nav-links a {
     /* Typography */
+    margin-left: 24px;
     font-size: var(--fs-ui);
     font-weight: var(--fw-bold);
     color: var(--gray-text);
