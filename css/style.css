@@ -50,37 +50,52 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+a {
+    /* Typography */
+    color: inherit;
+    text-decoration: none;
+}
+
 /* 3. TYPOGRAPHY HIERARCHY */
 h1 {
+    /* Box Model */
+    margin-bottom: 16px;
+
+    /* Typography */
     font-size: var(--fs-h1);
     font-weight: var(--fw-extra-bold);
     line-height: var(--lh-tight);
     letter-spacing: -0.02em;
-    margin-bottom: 16px;
 }
 
 h2 {
+    /* Typography */
     font-size: var(--fs-h2);
     font-weight: var(--fw-bold);
     line-height: var(--lh-tight);
 }
 
 .ui-label {
+    /* Typography */
     font-size: var(--fs-ui);
     font-weight: var(--fw-semibold);
 }
 
 .caption {
+    /* Typography */
     font-size: var(--fs-sm);
     font-weight: var(--fw-medium);
     color: var(--gray-text);
 }
 
 .subtext {
+    /* Box Model */
+    max-width: 600px;
+
+    /* Typography */
     font-size: var(--fs-body);
     font-weight: var(--fw-medium);
     color: var(--gray-text);
-    max-width: 600px;
 }
 
 /* 4. LAYOUT */
@@ -95,7 +110,6 @@ nav {
     /* Positioning */
     position: sticky;
     top: 0;
-    padding: 20px 5%;
 
     /* Layout */
     display: flex;
@@ -103,6 +117,7 @@ nav {
     justify-content: space-between;
 
     /* Box Model */
+    padding: 20px 5%;
     border-bottom: 1px solid var(--border-color);
 
     /* Visual */
@@ -111,14 +126,21 @@ nav {
 }
 
 .nav-logo {
+    /* Typography */
     font-size: var(--fs-body);
     font-weight: var(--fw-extra-bold);
 }
 
-.nav-links a {
+.nav-links {
+    /* Layout */
+    display: flex;
+    gap: 24px;
+
     /* Box Model */
     margin-left: 24px;
+}
 
+.nav-links a {
     /* Typography */
     font-size: var(--fs-ui);
     font-weight: var(--fw-bold);
@@ -127,19 +149,20 @@ nav {
 }
 
 .nav-links a:hover {
+    /* Typography */
     color: var(--green);
 }
 
 #hero {
-    /* Layout */
-    text-align: center;
-
     /* Box Model */
     padding: 120px 0;
+    border-bottom: 2px solid var(--border-color);
+
+    /* Typography */
+    text-align: center;
 
     /* Visual */
     background-color: var(--gray-light);
-    border-bottom: 2px solid var(--border-color);
 }
 
 .project-grid {
