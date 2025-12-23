@@ -90,27 +90,20 @@ nav {
     /* Positioning */
     position: sticky;
     top: 0;
+    padding: 20px 5%;
 
     /* Layout */
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     /* Box Model */
     height: 72px;
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 
     /* Visual */
     background: white;
-}
-
-.nav-inner {
-    /* Layout */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    /* Box Model */
-    width: 100%;
+    backdrop-filter: blur(5px);
 }
 
 .nav-logo {
@@ -118,7 +111,7 @@ nav {
     font-weight: var(--fw-bold);
 }
 
-.nav-links {
+.nav-links a {
     /* Box Model */
     margin-left: 24px;
 
@@ -126,6 +119,7 @@ nav {
     font-size: var(--fs-ui);
     font-weight: var(--fw-semibold);
     color: var(--gray-text);
+    text-decoration: none;
 }
 
 .nav-links a:hover {
