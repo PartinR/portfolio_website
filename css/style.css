@@ -11,8 +11,8 @@
     --font-main: "Figtree", sans-serif;
 
     /* Font Sizes */
-    --fs-h1: 2rem;
-    --fs-h2: 1.5rem;
+    --fs-h1: 2.5rem;
+    --fs-h2: 1.75rem;
     --fs-body: 1rem;
     --fs-ui: 0.875rem;
     --fs-sm: 0.75rem;
@@ -56,6 +56,7 @@ h1 {
     font-weight: var(--fw-extra-bold);
     line-height: var(--lh-tight);
     letter-spacing: -0.02em;
+    margin-bottom: 16px;
 }
 
 h2 {
@@ -75,9 +76,11 @@ h2 {
     color: var(--gray-text);
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+.subtext {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-medium);
+    color: var(--gray-text);
+    max-width: 600px;
 }
 
 /* 4. LAYOUT */
