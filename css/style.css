@@ -118,7 +118,7 @@ nav {
 
     /* Typography */
     font-size: var(--fs-ui);
-    font-weight: var(--fw-semibold);
+    font-weight: var(--fw-bold);
     color: var(--gray-text);
     text-decoration: none;
 }
