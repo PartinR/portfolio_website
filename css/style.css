@@ -210,12 +210,18 @@ nav {
     border-radius: 20px;
 }
 
-.card:hover {
-    /* Visual */
-    border-color: var(--green);
+.project-link {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: white;
+    background: var(--green);
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: background-color 0.2s ease;
+}
 
-    /* Misc */
-    transform: translateY(-4px);
+.project-link:hover {
+    background-color: #46a302;
 }
 
 .btn {
