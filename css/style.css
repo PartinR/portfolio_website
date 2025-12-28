@@ -27,6 +27,9 @@
     /* Line Heights */
     --lh-tight: 1.2;
     --lh-loose: 1.6;
+
+    /* Spacing */
+    --section-spacing: 80px;
 }
 
 /* 2. BASE STYLES */
@@ -66,13 +69,22 @@ h1 {
     font-weight: var(--fw-extra-bold);
     line-height: var(--lh-tight);
     letter-spacing: -0.02em;
+    margin-bottom: 16px;
 }
 
 h2 {
     /* Typography */
     font-size: var(--fs-h2);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-extra-bold);
     line-height: var(--lh-tight);
+    margin-bottom: 16px;
+}
+
+h3 {
+    /*Typography */
+    font-weight: var(--fw-extra-bold);
+    line-height: var(--lh-tight);
+    margin-bottom: 16px;
 }
 
 .ui-label {
@@ -101,9 +113,9 @@ h2 {
 /* 4. LAYOUT */
 .container {
     /* Box Model */
+    width: 90%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 24px;
 }
 
 nav {
@@ -157,24 +169,33 @@ nav {
     background-color: var(--gray-light);
 }
 
-.project-grid {
+#projects {
+    padding: var(--section-spacing) 0;
+}
+
+.grid {
     /* Layout */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 24px;
 
     /* Box Model */
-    margin-top: 48px;
+    margin-top: 40px;
 }
 
 .card {
     /* Box Model */
-    padding: 24px;
+    padding: 32px;
     border: 2px solid var(--border-color);
     border-radius: 16px;
 
     /* Misc */
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card-footer {
+    /* Box Model */
+    margin-top: 24px;
 }
 
 .card:hover {
