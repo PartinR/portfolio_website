@@ -195,7 +195,19 @@ nav {
 
 .card-footer {
     /* Box Model */
-    margin-top: 24px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.tag {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--gray-text);
+    background: var(--gray-light);
+    padding: 6px 12px;
+    border-radius: 20px;
 }
 
 .card:hover {
