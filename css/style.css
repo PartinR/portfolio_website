@@ -2,6 +2,7 @@
 :root {
     /* Colors */
     --green: #58cc02;
+    --green-bright: #78d933;
     --black: #202124;
     --gray-light: #f8f9fa;
     --gray-text: #5f6368;
@@ -156,9 +157,16 @@ nav {
     text-decoration: none;
 }
 
-.nav-links a:hover {
-    /* Typography */
+.nav-links a:hover:not(.contact-link) {
+    color: var(--green-bright);
+}
+
+.nav-links a.contact-link {
     color: var(--green);
+}
+
+.nav-links a.contact-link:hover {
+    color: var(--green-bright);
 }
 
 #hero {
@@ -225,7 +233,7 @@ nav {
 }
 
 .project-link:hover {
-    background-color: #46a302;
+    background-color: var(--green-bright);
 }
 
 .btn {
@@ -248,6 +256,10 @@ nav {
 
     /* Misc */
     transition: all 0.1s ease;
+}
+
+.btn:hover {
+    background-color: var(--green-bright);
 }
 
 .btn:active {
