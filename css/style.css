@@ -33,6 +33,10 @@
 }
 
 /* 2. BASE STYLES */
+html {
+    scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
