@@ -269,3 +269,39 @@ nav {
     /* Misc */
     transform: translateY(4px);
 }
+
+/* 5. ANIMATIONS */
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .1em solid var(--black);
+    white-space: nowrap;
+    margin: 0 auto 16px auto;
+    letter-spacing: normal;
+    animation:
+        typing 3.5s steps(31, end),
+        blink-caret .75s step-end infinite;
+    max-width: fit-content;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 33ch;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--black);
+    }
+}
