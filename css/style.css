@@ -289,24 +289,6 @@ nav {
     border-radius: 20px;
 }
 
-.skill-tag {
-    /* Layout */
-    display: inline-block;
-
-    /* Typography */
-    font-weight: var(--fw-semibold);
-    font-size: var(--fs-ui);
-
-    /* Box Model */
-    padding: 8px 16px;
-    margin: 0 8px 8px 0;
-
-    /* Visual */
-    background: var(--gray-light);
-    border: 2px solid var(--border-color);
-    border-radius: 12px;
-}
-
 /*
  * 6. SECTIONS
  */
