@@ -307,12 +307,17 @@ nav {
 #projects {
     /* Box Model */
     padding: var(--section-spacing) 0;
+
+    /* Visual */
+    border-bottom: 2px solid var(--border-color);
 }
 
 #about {
+    /* Box Model */
+    padding: var(--section-spacing) 0;
+
     /* Visual */
-    background-color: var(--gray-light);
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
 }
 
 .about-grid {
