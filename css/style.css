@@ -323,7 +323,7 @@ nav {
 .about-grid {
     /* Layout */
     display: grid;
-    grid-template-columns: 1.5fr, 1fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: 40px;
 
     /* Box Model */
