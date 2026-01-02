@@ -1,4 +1,6 @@
-/* 1. DESIGN TOKENS */
+/*
+ * 1. DESIGN TOKENS
+ */
 :root {
     /* Colors */
     --green: #58cc02;
@@ -33,14 +35,18 @@
     --section-spacing: 80px;
 }
 
-/* 2. BASE STYLES */
+/*
+ * 2. BASE STYLES
+ */
 html {
+    /* Interaction */
     scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
+    /* Box Model */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -64,7 +70,9 @@ a {
     text-decoration: none;
 }
 
-/* 3. TYPOGRAPHY HIERARCHY */
+/*
+ * 3. TYPOGRAPHY
+ */
 h1 {
     /* Box Model */
     margin-bottom: 16px;
@@ -86,7 +94,7 @@ h2 {
 }
 
 h3 {
-    /*Typography */
+    /* Typography */
     font-weight: var(--fw-extra-bold);
     line-height: var(--lh-tight);
     margin-bottom: 16px;
@@ -115,7 +123,9 @@ h3 {
     color: var(--gray-text);
 }
 
-/* 4. LAYOUT */
+/*
+ * 4. LAYOUT & UTILITIES
+ */
 .container {
     /* Box Model */
     width: 90%;
@@ -123,6 +133,20 @@ h3 {
     margin: 0 auto;
 }
 
+.grid {
+    /* Layout */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+
+    /* Box Model */
+    margin-top: 40px;
+}
+
+/*
+ * 5. COMPONENTS
+ */
+/* Navigation */
 nav {
     /* Positioning */
     position: sticky;
@@ -158,107 +182,21 @@ nav {
 }
 
 .nav-links a:hover:not(.contact-link) {
+    /* Visual */
     color: var(--green-bright);
 }
 
 .nav-links a.contact-link {
+    /* Visual */
     color: var(--green);
 }
 
 .nav-links a.contact-link:hover {
+    /* Visual */
     color: var(--green-bright);
 }
 
-#hero {
-    /* Box Model */
-    padding: 120px 0;
-    border-bottom: 2px solid var(--border-color);
-
-    /* Typography */
-    text-align: center;
-
-    /* Visual */
-    background-color: var(--gray-light);
-}
-
-#projects {
-    padding: var(--section-spacing) 0;
-}
-
-.project-link {
-    font-size: var(--fs-sm);
-    font-weight: 600;
-    color: white;
-    background: var(--green);
-    padding: 6px 12px;
-    border-radius: 20px;
-    transition: background-color 0.2s ease;
-}
-
-.project-link:hover {
-    background-color: var(--green-bright);
-}
-
-.grid {
-    /* Layout */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 24px;
-
-    /* Box Model */
-    margin-top: 40px;
-}
-
-.card {
-    /* Box Model */
-    padding: 32px;
-    border: 2px solid var(--border-color);
-    border-radius: 16px;
-
-    /* Misc */
-    transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.card-footer {
-    /* Box Model */
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-top: 16px;
-}
-
-.tag {
-    font-size: var(--fs-sm);
-    font-weight: 600;
-    color: var(--gray-text);
-    background: var(--gray-light);
-    padding: 6px 12px;
-    border-radius: 20px;
-}
-
-#about {
-    background-color: var(--gray-light);
-    border-bottom: 1px solid var(--border-color);
-}
-
-.about-grid {
-    display: grid;
-    grid-template-columns: 1.5fr, 1fr;
-    gap: 40px;
-    margin-top: 40px;
-}
-
-.skill-tag {
-    display: inline-block;
-    background: var(--gray-light);
-    border: 2px solid var(--border-color);
-    padding: 8px 16px;
-    border-radius: 12px;
-    margin: 0 8px 8px 0;
-    font-weight: var(--fw-semibold);
-    font-size: var(--fs-ui);
-}
-
+/* Buttons */
 .btn {
     /* Layout */
     display: inline-block;
@@ -282,6 +220,7 @@ nav {
 }
 
 .btn:hover {
+    /* Visual */
     background-color: var(--green-bright);
 }
 
@@ -293,18 +232,140 @@ nav {
     transform: translateY(4px);
 }
 
-/* 5. ANIMATIONS */
-.typewriter {
+/* Cards */
+.card {
+    /* Box Model */
+    padding: 32px;
+    border: 2px solid var(--border-color);
+    border-radius: 16px;
+
+    /* Misc */
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card-footer {
+    /* Box Model */
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+/* Specific Project Link Components */
+.project-link {
+    /* Typography */
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: white;
+
+    /* Box Model */
+    padding: 6px 12px;
+
+    /* Visual */
+    background: var(--green);
+    border-radius: 20px;
+
+    /* Animation */
+    transition: background-color 0.2s ease;
+}
+
+.project-link:hover {
+    /* Visual */
+    background-color: var(--green-bright);
+}
+
+/* Tags */
+.tag {
+    /* Typography */
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--gray-text);
+
+    /* Box Model */
+    padding: 6px 12px;
+
+    /* Visual */
+    background: var(--gray-light);
+    border-radius: 20px;
+}
+
+.skill-tag {
+    /* Layout */
     display: inline-block;
+
+    /* Typography */
+    font-weight: var(--fw-semibold);
+    font-size: var(--fs-ui);
+
+    /* Box Model */
+    padding: 8px 16px;
+    margin: 0 8px 8px 0;
+
+    /* Visual */
+    background: var(--gray-light);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+}
+
+/*
+ * 6. SECTIONS
+ */
+#hero {
+    /* Box Model */
+    padding: 120px 0;
+    border-bottom: 2px solid var(--border-color);
+
+    /* Typography */
+    text-align: center;
+
+    /* Visual */
+    background-color: var(--gray-light);
+}
+
+#projects {
+    /* Box Model */
+    padding: var(--section-spacing) 0;
+}
+
+#about {
+    /* Visual */
+    background-color: var(--gray-light);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.about-grid {
+    /* Layout */
+    display: grid;
+    grid-template-columns: 1.5fr, 1fr;
+    gap: 40px;
+
+    /* Box Model */
+    margin-top: 40px;
+}
+
+/*
+ * 7. ANIMATIONS
+ */
+.typewriter {
+    /* Layout */
+    display: inline-block;
+
+    /* Box Model */
     overflow: hidden;
-    border-right: .1em solid var(--black);
-    white-space: nowrap;
     margin: 0 auto 16px auto;
+    max-width: fit-content;
+    white-space: nowrap;
+
+    /* Visual */
+    border-right: .1em solid var(--black);
+
+    /* Typography */
     letter-spacing: normal;
+
+    /* Animation */
     animation:
         typing 3.5s steps(31, end),
         blink-caret .75s step-end infinite;
-    max-width: fit-content;
 }
 
 @keyframes typing {
