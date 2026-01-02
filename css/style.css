@@ -238,9 +238,9 @@ nav {
     padding: 32px;
     border: 2px solid var(--border-color);
     border-radius: 16px;
-
-    /* Misc */
-    transition: transform 0.2s ease, border-color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .card-footer {
@@ -248,7 +248,8 @@ nav {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
-    margin-top: 16px;
+    margin-top: auto;
+    padding-top: 24px
 }
 
 /* Specific Project Link Components */
