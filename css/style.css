@@ -185,6 +185,20 @@ nav {
     padding: var(--section-spacing) 0;
 }
 
+.project-link {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: white;
+    background: var(--green);
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.project-link:hover {
+    background-color: var(--green-bright);
+}
+
 .grid {
     /* Layout */
     display: grid;
@@ -220,20 +234,6 @@ nav {
     background: var(--gray-light);
     padding: 6px 12px;
     border-radius: 20px;
-}
-
-.project-link {
-    font-size: var(--fs-sm);
-    font-weight: 600;
-    color: white;
-    background: var(--green);
-    padding: 6px 12px;
-    border-radius: 20px;
-    transition: background-color 0.2s ease;
-}
-
-.project-link:hover {
-    background-color: var(--green-bright);
 }
 
 .btn {
