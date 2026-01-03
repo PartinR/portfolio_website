@@ -294,12 +294,13 @@ nav {
  * 6. SECTIONS
  */
 #hero {
-
-    /* Misc */
-    min-height: calc(100vh - 73px);
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     /* Box Model */
-    padding: 120px 0;
     border-bottom: 2px solid var(--border-color);
 
     /* Typography */
@@ -307,6 +308,9 @@ nav {
 
     /* Visual */
     background-color: var(--gray-light);
+
+    /* Misc */
+    min-height: calc(100vh - 135.2px);
 }
 
 #projects {
