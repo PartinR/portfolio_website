@@ -294,6 +294,10 @@ nav {
  * 6. SECTIONS
  */
 #hero {
+
+    /* Misc */
+    min-height: calc(100vh - 73px);
+
     /* Box Model */
     padding: 120px 0;
     border-bottom: 2px solid var(--border-color);
