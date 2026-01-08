@@ -290,6 +290,34 @@ nav {
     border-radius: 20px;
 }
 
+.social-link {
+    /* Layout */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Typography */
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: white;
+
+    /* Box Model */
+    padding: 8px 16px;
+    min-width: 40px;
+
+    /* Visual */
+    background: var(--green);
+    border-radius: 20px;
+
+    /* Misc */
+    transition: all 0.2s ease;
+}
+
+.social-link:hover {
+    /* Visual */
+    background-color: var(--green-bright);
+}
+
 /*
  * 6. SECTIONS
  */
@@ -313,7 +341,7 @@ nav {
     min-height: calc(100vh - 135.2px);
 }
 
-#projects {
+#about {
     /* Box Model */
     padding: var(--section-spacing) 0;
 
@@ -321,7 +349,17 @@ nav {
     border-bottom: 2px solid var(--border-color);
 }
 
-#about {
+.about-grid {
+    /* Layout */
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+
+    /* Box Model */
+    margin-top: 40px;
+}
+
+#projects {
     /* Box Model */
     padding: var(--section-spacing) 0;
 
@@ -350,46 +388,15 @@ nav {
     padding-top: 0;
 }
 
-.social-link {
-    /* Layout */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    /* Typography */
-    font-size: var(--fs-sm);
-    font-weight: 600;
-    color: white;
-
-    /* Box Model */
-    padding: 8px 16px;
-    background: var(--green);
-    border-radius: 20px;
-    transition: all 0.2s ease;
-    min-width: 40px;
-}
-
-.social-link:hover {
-    /* Visual */
-    background-color: var(--green-bright);
-}
-
-.about-grid {
-    /* Layout */
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 40px;
-
-    /* Box Model */
-    margin-top: 40px;
-}
-
 .global-footer {
-    /* Box Model */
+    /* Layout */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    /* Box Model */
+    height: 67.6px;
 
     /* Typography */
     text-align: center;
@@ -398,9 +405,6 @@ nav {
 
     /* Visual */
     background-color: white;
-
-    /* Misc */
-    height: 67.6px;
 }
 
 /*
