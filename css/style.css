@@ -369,6 +369,11 @@ nav {
     min-width: 40px;
 }
 
+.social-link:hover {
+    /* Visual */
+    background-color: var(--green-bright);
+}
+
 .about-grid {
     /* Layout */
     display: grid;
@@ -377,6 +382,25 @@ nav {
 
     /* Box Model */
     margin-top: 40px;
+}
+
+.global-footer {
+    /* Box Model */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Typography */
+    text-align: center;
+    font-size: var(--fs-sm);
+    color: var(--gray-text);
+
+    /* Visual */
+    background-color: white;
+
+    /* Misc */
+    height: 67.6px;
 }
 
 /*
