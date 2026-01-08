@@ -329,6 +329,46 @@ nav {
     border-bottom: 2px solid var(--border-color);
 }
 
+#contact {
+    /* Box Model */
+    padding: var(--section-spacing) 0;
+
+    /* Typography */
+    text-align: center;
+
+    /* Visual */
+    border-bottom: 2px solid var(--border-color);
+    background-color: var(--gray-light);
+}
+
+.contact-footer {
+    /* Layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding-top: 0;
+}
+
+.social-link {
+    /* Layout */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Typography */
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: white;
+
+    /* Box Model */
+    padding: 8px 16px;
+    background: var(--green);
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    min-width: 40px;
+}
+
 .about-grid {
     /* Layout */
     display: grid;
