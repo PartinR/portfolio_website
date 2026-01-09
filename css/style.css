@@ -283,6 +283,7 @@ nav {
     color: var(--gray-text);
 
     /* Box Model */
+    display: inline-flex;
     padding: 6px 12px;
 
     /* Visual */
