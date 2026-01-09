@@ -246,7 +246,7 @@ nav {
 .card-footer {
     /* Box Model */
     display: flex;
-    gap: 12px 4px;
+    gap: 12px 6px;
     flex-wrap: wrap;
     margin-top: auto;
     padding-top: 24px
@@ -279,7 +279,7 @@ nav {
 .tag-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px 4px;
+    gap: 12px 6px;
     margin-top: 12px;
 }
 
