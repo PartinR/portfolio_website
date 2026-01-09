@@ -466,11 +466,6 @@ nav {
  * 8. MEDIA QUERIES
  */
 @media (max-width: 768px) {
-    #hero {
-        min-height: auto;
-        padding: 40px 0;
-    }
-
     .typewriter {
         white-space: normal;
         border-right: none;
