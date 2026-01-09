@@ -10,7 +10,7 @@ To design and implement:
 - A platform to present my background in finance and software engineering.
 
 ### Technologies
-- Languages: HTML, CSS, JavaScript
+- Languages: HTML, CSS
 
 ## Features
 #### Structure
